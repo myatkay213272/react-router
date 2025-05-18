@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, Outlet } from 'react-router-dom'
 
 const Products = () => {
   return (
@@ -12,6 +12,8 @@ const Products = () => {
         <Link to='feactured'>Feactured</Link>
         <Link to='new'>new</Link>
     </nav>
+
+    <Outlet/>
    </>
   )
 }
